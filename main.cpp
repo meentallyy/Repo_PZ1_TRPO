@@ -9,7 +9,7 @@ int main() {
     setlocale(LC_ALL, "Russian");
     cout << "Программа запущена!" << endl;
 
-    int a = 5, b = 3;
+    int a = 5, b = 3, i = 0, Sum = 0;
 
     ifstream File("input.txt");
     if (File.is_open()) {
@@ -25,9 +25,13 @@ int main() {
         cout << "Файл input.txt не найден. Используются значения по умолчанию." << endl;
     }
 
-    cout << "Сумма " << a << " + " << b << " = " << Plus(a, b) << endl;
-    cout << "Разность " << a << " + " << b << " = " << Minus(a, b) << endl;
-	cout << "Умножение " << a << " * " << b << " = " << a * b << endl;
+	for (i = 0; i < a; i++){
+		Sum += b;
+	}
+
+	cout << "Сумма: " << a << " + " << b << " = " << Plus(a, b) << endl;
+	cout << "Разность: " << a << " + " << b << " = " << Minus(a, b) << endl;
+	cout << "Умножение: " << a << " * " << b << " = " << Sum << endl;
 
     return 0;
 }
