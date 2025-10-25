@@ -25,8 +25,9 @@ int main() {
         cout << "Файл input.txt не найден. Используются значения по умолчанию." << endl;
     }
 
-    cout << "Сумма " << a << " и " << b << " = " << Plus(a, b) << endl;
-    cout << "Разность " << a << " и " << b << " = " << Minus(a, b) << endl;
+    cout << "Сумма " << a << " + " << b << " = " << Plus(a, b) << endl;
+    cout << "Разность " << a << " + " << b << " = " << Minus(a, b) << endl;
+	cout << "Умножение " << a << " * " << b << " = " << a * b << endl;
 
     return 0;
 }
